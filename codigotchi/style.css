@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  background: linear-gradient(#838ef9, #3535ec);
+  background-attachment: fixed;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0;
+  padding: 16px;
+  width: 90%;
+}
+
+header img {
+  width: 56px;
+}
+
+.panel {
+  background-color: white;
+  border-radius: 10px;
+  padding: 16px 24px;
+  margin-bottom: 16px;
+}
+
+.commands ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.commands ul li {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #4c6c96;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  background-color: #f71469;
+  border-radius: 40px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.codigotchi {
+  position: relative;
+  width: 230px;
+  margin: 0 auto 23px auto;
+}
+
+.codigotchi-screen {
+  position: absolute;
+  top: 118px;
+  left: 56px;
+  width: 120px;
+  height: 120px;
+  background-image: url("./images/static.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.codigotchi-screen_dance {
+  background-image: url(./images/codigotchi-actions/dance.gif);
+}
+
+.codigotchi-screen_eat {
+  background-image: url(./images/codigotchi-actions/eat.gif);
+}
+
+.codigotchi-screen_sleep {
+  background-image: url(./images/codigotchi-actions/sleep.gif);
+}
+.panel-commands {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 88%;
+}
+
+.talking .panel-mic {
+  visibility: hidden;
+}
+
+.talking .panel-commands {
+  visibility: visible;
+}
+
+.panels {
+  position: relative;
+}
+
+#transcript {
+  color: white;
+  font-weight: bold;
+}

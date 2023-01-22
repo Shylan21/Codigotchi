@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
+  <title>Codigotchi</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <img src="images/logo.png" />
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Codigotchi-->
+      <section class="codigotchi">
+        <img src="images/codigotchi.png" />
+        <div id="screen" class="codigotchi-screen"></div>
+      </section>
+
+      <section id="panels-data" class="panels">
+
+        <!-- Mic Controls -->
+        <div class="panel panel-mic">
+          <button id="mic">
+            <img src="images/mic.png" />
+          </button>
+          <h2>
+            Activate Microphone
+          </h2>
+        </div>
+
+        <!-- Voice Controls-->
+        <div class="panel panel-commands">
+          <h2>Speak a command!</h2>
+          <h3>Supported commands</h3>
+
+          <div class="commands">
+            <ul>
+              <li>Eat</li>
+              <li>Dance</li>
+              <li>Sleep</li>
+            </ul>
+          </div>
+        </div>
+
+
+      </section>
+      <p id="transcript"></p>
+    </main>
+  </div>
+</body>
+
+</html>
